@@ -31,11 +31,10 @@ plugins/
 Add to the Desktop 3P configuration under `plugins.marketplaces`:
 
 ```json
-{ "source": "github", "repo": "mkhanplative/claude-desktop-plugins", "credentialKind": "userGit", "installationPreference": "available" }
+{ "source": "github", "repo": "mkhanplative/claude-desktop-plugins", "installationPreference": "available" }
 ```
 
-`credentialKind: "userGit"` is required while this repo is private; it uses the git credential
-helper already configured for the macOS user. Then install the plugins from
+The repo is public, so the default `anonymous` credential is enough. Then install the plugins from
 **Customize → Plugins → Discover → Organization**.
 
 ## Updating
